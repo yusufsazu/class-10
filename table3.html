@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device Table</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #673AB7;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table, th, td {
+            border: 2px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #673AB7;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background-color: #FFD54F;
+            font-weight: bold;
+        }
+
+        .device-category {
+            background-color: #E1BEE7;
+            font-weight: bold;
+        }
+
+        .brand {
+            background-color: #FFF9C4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #EDE7F6;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Device Table</h1>
+    <table>
+        <tr>
+            <th>Device</th>
+            <th>Brand</th>
+            <th colspan="2" class="highlight">Specifications</th>
+        </tr>
+        <tr>
+            <td rowspan="3" class="device-category">Smartphone</td>
+            <td rowspan="3" class="brand">Samsung</td>
+            <th>Model</th>
+            <th>Storage</th>
+        </tr>
+        <tr>
+            <td>Galaxy S22 Ultra</td>
+            <td>512GB</td>
+        </tr>
+        <tr>
+            <td>Galaxy A54</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="device-category">Smartphone</td>
+            <td rowspan="2" class="brand">Google</td>
+            <th>Model</th>
+            <th>Storage</th>
+        </tr>
+        <tr>
+            <td>Pixel 7 Pro</td>
+            <td>256GB</td>
+        </tr>
+        <tr>
+            <td class="device-category">Laptop</td>
+            <td class="brand">Dell</td>
+            <td colspan="2">17" Display, 1TB SSD</td>
+        </tr>
+        <tr>
+            <td class="device-category">Tablet</td>
+            <td class="brand">Apple</td>
+            <td colspan="2">iPad Pro 11", 512GB</td>
+        </tr>
+        <tr>
+            <td class="device-category">Smartwatch</td>
+            <td class="brand">Garmin</td>
+            <td colspan="2">Fenix 7, 32GB</td>
+        </tr>
+    </table>
+</body>
+</html>
